@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: white;
+}
+
+img:hover{
+    cursor: pointer;
+}
+nav{
+    padding: 20px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 23px;
+}
+
+img[Alt="menu"]
+{
+    display: none;
+    width: 20px;
+}
+
+.home{
+    padding: 5px 10px;
+    background: rgb(100, 100, 224);
+    border-radius: 15px;
+}
+
+.intro{
+    width: 100wh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    gap: 30px;
+}
+
+.intro-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.intro-left-name h1{
+    font-size: 60px;
+}
+.intro-left-name h3{
+    font-size: 35px;
+    color: rgb(197, 197, 89);
+} 
+
+.intro-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+img[alt="Hello"]{
+    height: 45px;
+}
+img[alt="Screen"]{
+    width: 30vw;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.projects div h1{
+    font-size: 30px;
+}
+
+.horizontal-divider{
+    height: 10px;
+    width: 105px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+img[alt="project-img"]{
+    width: 20vw;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact div h1{
+    font-size: 40px;
+}
+.horizontal-divider-contact{
+    height: 10px;
+    width: 195px;
+    background-color: blue;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+img[alt="logo"]
+{
+    width: 30px;
+}
+
+@media screen and (max-width: 576px)
+{
+    nav ul{
+        display: none;
+    }
+    img[alt="menu"]{
+        display: block;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+    }
+    img[alt="Screen"]{
+        width: 60vw;
+    }
+    .intro-line-hello{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+    }
+    .intro-line-name h1{
+        font-size: 40px;
+    }
+    .intro-line-name h3{
+        font-size: 25px;
+        text-align: center;
+    }
+    .project-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 20px; 
+    }
+    img[alt="project-img"]{
+        width: 55vw;
+    }
+    .projects div h1{
+        font-size: 35px;
+    }
+    .contact div h1{
+        font-size: 35px;
+    }
+    .horizontal-divider-contact{
+        height: 10px;
+        width: 180px;
+        background-color: blue;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+}
